@@ -1,0 +1,5 @@
+<section class='gallery'>
+    <a class="gallery__item" [routerLink]="['image', image.id]" *ngFor="let image of imagesCollection" [ngStyle]="{'background-image':'url('+image.path+')'}"></a>
+
+
+</section>

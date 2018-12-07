@@ -1,0 +1,23 @@
+<header>
+  <div class="menu-holder">
+  <ul class="menu">
+    <li class="menu__item"><a href="#">Сервисы</a></li>
+    <li class="menu__item"><a href="#">Проекты</a>
+       <ul class="submenu">
+          <li class="submenu__item"><a href="">Web-проекты</a>
+          <li class="submenu__item"><a href="">Мобильные приложения</a>
+        </ul></li>
+    <li class="menu__item"><a href="#">О компании</a></li>
+    <li class="menu__item"><a href="#">Команда</a></li>
+    <li class="menu__item"><a href="#">Контакты</a></li>
+  </ul>
+  <button class = "mobile_menu" mat-button [matMenuTriggerFor]="menu"></button>
+  <mat-menu #menu="matMenu" class="mat-menu-content">
+    <button  mat-menu-item><a href="#">Сервисы</a></button>
+    <button  mat-menu-item><a href="#">Проекты</a></button>
+    <button  mat-menu-item><a href="#">О компании</a></button>
+    <button  mat-menu-item><a href="#">Команда</a></button>
+    <button  mat-menu-item><a href="#">Контакты</a></button>
+  </mat-menu>
+  </div>
+    </header>
